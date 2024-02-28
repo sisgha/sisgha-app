@@ -60,7 +60,7 @@ const links = [
   {
     title: 'Início',
     icon: inicioIconWhite,
-    to: '/inicio',
+    to: '/',
   },
   {
     title: 'Turmas',
@@ -85,7 +85,7 @@ const links = [
   {
     title: 'Calendário',
     icon: calendarioIconWhite,
-    to: '/calendario',
+    to: '/calendario/',
   },
   {
     title: 'Outros',
