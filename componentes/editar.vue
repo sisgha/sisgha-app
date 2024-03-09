@@ -1,11 +1,11 @@
 <template>
-  <button @click="openModal"><img class="adc" src="~/assets/Bota0-Simples.jpg" alt="">  
+  <button @click="openModal"><img class="edi" src="~/assets/Editar.png" alt="">  
     <slot></slot>
   </button>
 </template>
 <script>
 export default {
-  name: 'adicionar',
+  name: 'editar',
   
   methods: {
     openModal() {
@@ -16,13 +16,13 @@ export default {
 
 </script>
 <style>
-.adc{
+.edi{
   position: absolute;
-  margin-left: 1150px;
-  margin-top: 40px;/*acres*/
-  width: 50px;
+  margin-left: 90px;
+  margin-top: 4px;/*acres*/
+  width: 0px;
 }
-.adc:hover{
+.edi:hover{
   cursor: pointer;
 }
 </style>

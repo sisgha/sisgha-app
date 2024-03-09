@@ -1,4 +1,4 @@
-<script setup>
+<!--<script setup>
 const props = defineProps({
   msge: String,
 })
@@ -44,7 +44,7 @@ export default {
   margin-left: 200px;
   margin-top: 45px;
   border-radius: 10px;
-  border: 2.5px solid #B2D2B7;
+  border: 3px solid #B2D2B7;
   width: 485px;
   height: 39px;
 }
@@ -83,5 +83,113 @@ export default {
   flex-shrink: 0;
   }
 
+</style>-->
+
+<template v-slot:search>
+  <div>
+    <div class="form">
+      <form action="./">
+        <label id="label" class="label" for="pesquisar">Pesquisar</label>
+        <IconSearch
+         class="icon" />
+        <input
+          class="input"
+          type="text"
+          id="pesquisar"
+          placeholder="Digite aqui."
+          autocomplete="off"
+        />
+      </form>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { ref, onMounted } from "vue";
+import IconSearch from "./icons/IconSearch.vue";
+
+// const searchTerm = ref("");
+// const filteredItems = ref([]);
+
+// const filterItems = () => {
+//   filteredItems.value = items.value.filter((item) =>
+//     item.name.toLowerCase().includes(searchTerm.value.toLowerCase())
+//   );
+// };
+</script>
+<style scoped>
+.form {
+  position:absolute;
+  margin-left: 200px;
+  margin-top: 45px;
+  border-radius: 10px;
+  border: white;
+  width: 485px;
+  height: 39px;
+}
+.form:hover{
+  cursor: pointer;
+}
+.label {
+  font-family: Poppins;
+  display: inline-block;
+  padding: 2px;
+  width: auto;
+  margin-top: -13px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid white;
+  background-color: white;
+  color: #9AB69E;
+  position: absolute;
+  margin-left: 12px;
+}
+input {
+  font-family: Poppins;
+  width: 485px;
+  height: 19px;
+  font-weight: 550;
+  font-size: 0.75rem;
+  border-radius: 10px;
+  border: 3px solid #B2D2B7;
+  transition: border-color 0.3s;
+  padding: 16px;
+  font-size: 15px;
+  flex: 1;
+}
+
+input::placeholder {
+  padding: 4px;
+  margin: 5px;
+  color: #9AB69E;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+input:focus {
+  outline: none;
+  border-color: #00d047;
+}
+
+.icon {
+  position: absolute;
+  left: 470px;
+  top: 29px;
+  transform: translateY(-50%);
+  fill: 9AB69E;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+
+.form:focus-within label {
+  color: #00d047;
+  transition: 0.3s;
+}
+
+.form:focus-within .icon {
+  fill: #00d047;
+}
 </style>
+
 

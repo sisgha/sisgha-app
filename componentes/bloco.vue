@@ -84,7 +84,5 @@ export default {
   position: absolute;
   margin-left: -45px;
   margin-top: 140px;
-  width: 30px;
-  height: 30px;
 }
 </style>

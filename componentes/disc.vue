@@ -11,7 +11,7 @@ const { imgSr, sala, curso, turno } = props;
 
 <template class="tudo">
   <div class="pai">
-    <img class="lapis" src="~/assets/Edit.jpg">
+    <img class="lapis" src="~assets/Editar.png">
     <img class="img" :src="imgSr"/>
     <div class="titulo"><b>{{ sala }}</b></div>
     <div class="abreviação">{{ curso }}</div>
@@ -32,54 +32,57 @@ export default {
   position:absolute;
 }
 .pai{
-  width: 487px;
-  height: 106px;
+  width: 550px;
+  height: 130px;
   flex-shrink: 0;
   border-radius: 8px;
-  border: 2.3px solid #B2D2B7;
+  border: 2.6px solid #B2D2B7;
   background: #FFF;
 }
 .img{
-  width: 106px;
-  height: 106px;
+  width: 150px;
+  height: 130px;
   flex-shrink: 0;
 }
 .titulo{
   position: absolute;
-  margin-left: 130px;
+  margin-left: 170px;
   font-family: Poppins;
-  font-size: 18.884px;
+  font-size: 15px;
   font-weight: bold;
   font-style: normal;
   font-weight: 900;
   line-height: bold;
-  margin-top: -95px;
+  margin-top: -110px;
 }
 .abreviação{
   color: #7C9C81;
   font-family: Poppins;
-  font-size: 15.107px;
+  font-size: 14.107px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-top: -67px;
-  margin-left: 130px;
+  margin-top: -78px;
+  margin-left: 170px;
 }
 .nível{
   color: #7C9C81;
   font-family: Poppins;
-  font-size: 15.107px;
+  font-size: 14.107px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   margin-top: 0px;
-  margin-left: 130px;
+  margin-left: 170px;
 }
 .img{
   border-radius: 8px 0px 0px 8px;
 }
 .lapis{
   position: absolute;
-  margin-top: -900px;
+  margin-top: 25px;
+  margin-left: 500px;
+  width: 18px;
+  height: 18px;
 }
 </style>

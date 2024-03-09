@@ -7,6 +7,7 @@
 
 
   <bloco class="p3" :imagemSrc="caminhoDaImagem3" :mensagem="mensagemDoPai3" :abreviacao="abre3" :nivel="niv3" />
+
   <SavedModal v-show="showModal"/>
 
   <div class="save-btn">
@@ -15,17 +16,21 @@
 
 </template>
 <script>
+import editar from '~/componentes/editar.vue'
 import bloco from '~/componentes/bloco.vue'
 import adicionar from '~/componentes/adicionar.vue'
 import caminhoDaImagem from '~/assets/Foto.png'
 import SearchBar from "~/componentes/SearchBar.vue"
 import SavedModal from '~/componentes/SavedModal.vue'
+import ModalEditar from '~/componentes/ModalEditar.vue'
 export default {
   components: {
+    editar,
     bloco,
     SearchBar,
     adicionar,
     SavedModal,
+    ModalEditar
   },
   data() {
     return {
@@ -44,8 +49,8 @@ export default {
       abre3: "Abreviação: Port.",
       niv3: "Modalidade: Técnico Integrado",
 
-      msg: "Digite aqui.",
-      showModal: false,
+      //msg: "Digite aqui.",
+      showModal: false, 
     };
   },
 }
