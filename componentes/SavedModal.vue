@@ -62,7 +62,7 @@
   height: 600px;
   width: 445px;
   border-radius: 10px;
-  border: 2.3px solid #9AB69E;
+   border: 2.3px solid #9AB69E;
   box-shadow: 0px 0px 33.5px 0px rgba(17, 141, 59, 0.15);
 }
 
